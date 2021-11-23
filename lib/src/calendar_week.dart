@@ -391,11 +391,7 @@ class _CalendarWeekState extends State<CalendarWeek> {
           width: 50,
           child: Text(
             title,
-            style: widget.weekendsIndexes
-                        .indexOf(widget.daysOfWeek.indexOf(title)) !=
-                    -1
-                ? widget.weekendsStyle
-                : widget.dayOfWeekStyle,
+            style: widget.dayOfWeekStyle
             overflow: TextOverflow.ellipsis,
             textAlign: TextAlign.center,
           ),
