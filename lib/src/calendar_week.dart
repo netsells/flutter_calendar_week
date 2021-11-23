@@ -391,7 +391,7 @@ class _CalendarWeekState extends State<CalendarWeek> {
           width: 50,
           child: Text(
             title,
-            style: widget.dayOfWeekStyle
+            style: widget.dayOfWeekStyle,
             overflow: TextOverflow.ellipsis,
             textAlign: TextAlign.center,
           ),
