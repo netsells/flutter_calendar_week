@@ -1,15 +1,16 @@
+import 'package:flutter_calendar_week/src/day_of_week.dart';
 import 'package:flutter_calendar_week/src/models/week_item.dart';
 import 'package:flutter_calendar_week/src/strings.dart';
 
 /// Read from [minDate] to [maxDate] and separate weeks.
 /// Return [List] contain weeks;
 List<WeekItem> separateWeeks(DateTime minDate, DateTime maxDate,
-    List<String> dayOfWeek, List<String> _months) {
+    List<DayOfWeek> dayOfWeek, List<String> _months) {
   /// Count until length day of week
   int count = 1;
 
   /// List contain day Of Week
-  final List<String> _dayOfWeek = [];
+  final List<DayOfWeek> _dayOfWeek = [];
 
   /// List contain day
   final List<DateTime> _days = [];

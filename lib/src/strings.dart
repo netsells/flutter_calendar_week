@@ -1,15 +1,17 @@
+import 'package:flutter_calendar_week/src/day_of_week.dart';
+
 /// Length of day of week
 final int maxDayOfWeek = 7;
 
 /// List contain day of week
-const List<String> dayOfWeekDefault = [
-  'MON',
-  'TUE',
-  'WED',
-  'THU',
-  'FRI',
-  'SAT',
-  'SUN'
+const List<DayOfWeek> dayOfWeekDefault = [
+  DayOfWeek.Monday,
+  DayOfWeek.Tuesday,
+  DayOfWeek.Wednesday,
+  DayOfWeek.Thursday,
+  DayOfWeek.Friday,
+  DayOfWeek.Saturday,
+  DayOfWeek.Sunday
 ];
 
 /// List contain titles month
